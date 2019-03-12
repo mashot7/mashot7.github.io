@@ -1,44 +1,51 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background: #f9f9f9;
+
+  font-family: "Lato", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #888;
 }
 
-/* Header */
+/* --------------------------------- Header --------------------------------- */
 #header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/bg.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.user-box {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main-text-box {
   position: absolute;
+  left: 10px;
+  top: 50%;
+  padding: 10px;
 }
 
-.user-box img {
-  border-radius: 50%;
-  width: 250px;
-  border: 2px solid #6caed5;
-}
-
-.user-box h1 {
+.main-text-box h1 {
+  font-family: serif;
   color: #fff;
-  font-weight: bold;
   margin: 10px;
+  text-align: left;
+  margin: 0;
 }
 
-.user-box p {
+.main-text-box p {
   color: #fff;
+
+  font-family: serif;
+  text-align: left;
 }
+
+/* --------------------------------- scroll button --------------------------------- */
 
 .scroll-btn {
-  bottom: 30px;
+  bottom: 15px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -54,7 +61,7 @@ body {
 }
 
 .scroll-bar {
-  animation: mover 1s alternate;
+  animation: mover 1s infinite;
 }
 @keyframes mover {
   0% {
@@ -64,20 +71,7 @@ body {
     transform: translateY(10px);
   }
 }
-
-/* ABOUT */
-.about {
-  padding-top: 100px;
-  margin-bottom: -130px;
-}
-
-.col-md-6 p {
-  line-height: 150%;
-}
-
-.profile-img {
-  height: 400px;
-}
+/* --------------------------------- navbar --------------------------------- */
 
 .nav-bar {
   top: 0;
@@ -86,7 +80,13 @@ body {
 }
 
 .navbar {
-  background-color: #000;
+  background: #1e8bc3;
+  /* 
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 102, 149, 1),
+    rgba(51, 119, 162, 1)
+  ); */
 }
 
 .navbar-brand img {
@@ -115,6 +115,161 @@ li.active a {
   color: #6caed5 !important;
 }
 
+/* --------------------------------- Best Offers --------------------------------- */
+
+.container {
+  padding-top: 70px;
+}
+
+.best-offers {
+  text-align: center;
+}
+
+.best-offers h3 {
+  line-height: 1.38889;
+  font-size: 36px;
+}
+
+.col-sm-12.col-md-6.col-lg-4 {
+  margin-bottom: 30px;
+}
+
+/* Image card */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+a .img-fluid {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pull-left a {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #000;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: left;
+  /* float: left; */
+}
+
+.pull-right p {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.box-offer-caption ul li {
+  color: #aaa;
+  font-size: 14px;
+  display: inline;
+  float: left;
+  margin-right: 15px;
+}
+
+.test-after:after {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #aaa;
+  right: 112px;
+  bottom: 22px;
+  width: 1px;
+  height: 1px;
+  z-index: 1;
+}
+
+a.button {
+  margin-top: 50px;
+  color: #fff;
+  background: #11658f;
+  display: inline-block;
+  min-width: 185px;
+  padding: 9px 20px;
+  font-size: 12px;
+  line-height: 21px;
+  border-radius: 30px;
+  font-weight: 900;
+  text-align: center;
+  border: 1px solid transparent;
+}
+a.button:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #094563;
+}
+
+/* Find your travel */
+
+.findYourTravel {
+  position: relative;
+  margin-top: 50px;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.findYourTravel .col-md-10 {
+  position: abolute;
+  float: none;
+  top: 80px;
+  margin: 0 auto;
+}
+
+.findYourTravel .col-md-10 .btn {
+  float: right;
+}
+
+.findYourTravel .col-md-10 h2 {
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+@media only screen and (min-width: 768px) {
+  .findYourTravel .col-md-10 h2 {
+    line-height: 1.25;
+    font-size: 48px;
+  }
+
+  .findYourTravel .col-md-10 {
+    position: abolute;
+    float: none;
+    top: 80px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .findYourTravel .col-md-10 {
+    position: abolute;
+    float: right;
+    top: 80px;
+    text-align: right;
+  }
+}
+
+/* --------------------------------- ABOUT --------------------------------- */
+/* .about {
+  padding-top: 100px;
+  margin-bottom: -130px;
+}
+
+.col-md-6 p {
+  line-height: 150%;
+}
+
+.profile-img {
+  height: 400px;
+} */
+
 .skills-bar p {
   margin-bottom: 6px;
   font-weight: 600;
@@ -130,7 +285,7 @@ li.active a {
   background: #000 !important;
 }
 
-/* RESUME */
+/* --------------------------------- RESUME --------------------------------- */
 .resume {
   margin-top: -50px;
   padding-top: 50px;
@@ -191,7 +346,7 @@ li.active a {
   z-index: 1;
 }
 
-/* CONTACT */
+/* --------------------------------- CONTACT --------------------------------- */
 .contact {
   padding-top: 50px;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -242,7 +397,7 @@ li.active a {
   padding-top: 10px;
 }
 
-/* SOCIAL ICONS */
+/* --------------------------------- SOCIAL ICONS --------------------------------- */
 
 .social-icons {
   top: 50%;
