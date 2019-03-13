@@ -299,7 +299,7 @@ a:hover {
 }
 
 /* --------------------------------- tours --------------------------------- */
-.tours#header {
+.tours-page#header {
   height: 45vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../src/img/main/header.png);
@@ -307,12 +307,12 @@ a:hover {
   background-size: cover;
   background-attachment: fixed;
 }
-h1.about {
+h1.tours-page {
   line-height: 1.2;
   font-size: 60px;
 }
 
-.about.main-text-box {
+.tours-page.main-text-box {
   position: absolute;
   top: 20%;
   padding: 10px;
@@ -320,10 +320,105 @@ h1.about {
 
 /* --------------------------------- armenia --------------------------------- */
 
+.armenia-page#header {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1.armenia-page {
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+.armenia-page.main-text-box {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
+
 /* --------------------------------- gallery --------------------------------- */
+
+.gallery-page#header {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1.gallery-page {
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+.gallery-page.main-text-box {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
 
 /* --------------------------------- videos --------------------------------- */
 
+.videos-page#header {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1.videos-page {
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+.videos-page.main-text-box {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
+
 /* --------------------------------- blog --------------------------------- */
 
+.blog-page#header {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1.blog-page {
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+.blog-page.main-text-box {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
+
 /* --------------------------------- about --------------------------------- */
+
+.about-page#header {
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../src/img/main/header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1.about-page {
+  line-height: 1.2;
+  font-size: 60px;
+}
+
+.about-page.main-text-box {
+  position: absolute;
+  top: 20%;
+  padding: 10px;
+}
